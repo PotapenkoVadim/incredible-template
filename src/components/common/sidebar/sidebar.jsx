@@ -5,7 +5,7 @@ import styles from './sidebar.module.scss';
 export default function Sidebar() {
   useLayoutEffect(() => {
     gsap.fromTo(
-      '[data-title]',
+      `.${styles['sidebar__title']}`,
       {
         opacity: 0,
         y: -50,
@@ -18,7 +18,7 @@ export default function Sidebar() {
     );
 
     gsap.fromTo(
-      '[data-link]',
+      `.${styles['sidebar__nav-item']}`,
       {
         opacity: 0,
         x: -50,
@@ -35,25 +35,24 @@ export default function Sidebar() {
 
   return (
     <div className={styles['sidebar']}>
-      <div data-title className={styles['sidebar__title']}>
+      <div className={styles['sidebar__title']}>
         INCREDIBLE
       </div>
 
       <nav className={styles['sidebar__nav']}>
         <a
-          data-link
           className={`${styles['sidebar__nav-item']} ${styles['sidebar__nav-item_active']}`}
           href="#"
         >
           Home
         </a>
-        <a data-link className={styles['sidebar__nav-item']} href="#">
+        <a className={styles['sidebar__nav-item']} href="#">
           About
         </a>
-        <a data-link className={styles['sidebar__nav-item']} href="#">
+        <a className={styles['sidebar__nav-item']} href="#">
           Gallery
         </a>
-        <a data-link className={styles['sidebar__nav-item']} href="#">
+        <a className={styles['sidebar__nav-item']} href="#">
           Contact
         </a>
       </nav>
