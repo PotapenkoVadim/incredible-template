@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.contact { background-color: $light; border-top: 1px solid $dark; border-bottom: 1px solid $dark;
+  padding: 55px calc($index * 5) 80px;
+
+  &__form { max-width: 60%; margin: 0 auto; }
+
+  @media (max-width: $tablet) { padding: 55px $index 80px;
+    &__form { max-width: 100%; }
+  }
+}

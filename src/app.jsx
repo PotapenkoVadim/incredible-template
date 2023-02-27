@@ -5,6 +5,7 @@ import Introduce from '@/components/common/introduce/introduce';
 import Benefits from '@/components/common/benefits/benefits';
 import Attention from '@/components/common/attention/attention';
 import Works from '@/components/common/works/works';
+import Contact from '@/components/common/contact/contact';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Benefits />
         <Attention />
         <Works />
+        <Contact />
       </div>
     </main>
   );
