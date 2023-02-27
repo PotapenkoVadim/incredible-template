@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './app.module.scss';
 import Sidebar from '@/components/common/sidebar/sidebar';
 import Introduce from '@/components/common/introduce/introduce';
+import Benefits from '@/components/common/benefits/benefits';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
 
       <div className={styles['app__container']}>
         <Introduce />
+        <Benefits />
       </div>
     </main>
   );

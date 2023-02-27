@@ -1,9 +1,13 @@
 @import '../../../styles/variables';
 
-.icon { display: block; width: 30px; height: 30px; mask-position: center; mask-repeat: no-repeat; mask-size: contain;
+.icon { display: block; width: 100px; height: 100px; mask-position: center; mask-repeat: no-repeat; mask-size: contain;
 
-  &__menu { mask-image: url(../../../assets/icons/menu.svg); }
-  &__close { mask-image: url(../../../assets/icons/close.svg); }
+  &__menu { mask-image: url(../../../assets/icons/menu.svg); width: 30px; height: 30px; }
+  &__close { mask-image: url(../../../assets/icons/close.svg); width: 30px; height: 30px; }
+  &__cloud { mask-image: url(../../../assets/icons/cloud.svg); }
+  &__layout { mask-image: url(../../../assets/icons/layout.svg); }
+  &__settings { mask-image: url(../../../assets/icons/settings.svg); }
+  &__video { mask-image: url(../../../assets/icons/video.svg); }
 
   &_black { background-color: $text; }
   &_red { background-color: $accent; }

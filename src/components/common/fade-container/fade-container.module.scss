@@ -1,0 +1,5 @@
+@import '../../../styles/variables';
+
+.fade-container { opacity: 1;
+  @media (max-width: $tablet) { opacity: 1; }
+}

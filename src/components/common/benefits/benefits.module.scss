@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.benefits { margin: 50px 0 75px; padding: 0 calc($index * 5);
+  &__list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  &__item {
+    &-title { font-size: 1.06rem; font-family: 'Oswald'; text-transform: uppercase; margin-bottom: 7px; }
+    &-text { color: rgba(0, 0, 0, 0.74); font-size: 0.93rem; margin-bottom: 7px; }
+    &-link { color: $accent; text-decoration: none; font-family: 'Oswald';
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__list { grid-template-columns: 1fr; }
+    &__item {
+      &-icon { margin: 0 auto; }
+    }
+  }
+}

@@ -6,7 +6,7 @@ import Button from '@/components/ui-kit/button/button';
 export default function Introduce() {
   useLayoutEffect(() => {
     gsap.to(`.${styles['introduce__title']}`, {
-      delay: 1.25,
+      delay: 0.75,
       opacity: 1,
     });
 
@@ -18,7 +18,7 @@ export default function Introduce() {
       },
       {
         opacity: 1,
-        delay: 1.25,
+        delay: 1,
         y: 0,
       }
     );

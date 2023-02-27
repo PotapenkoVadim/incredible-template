@@ -1,18 +1,18 @@
 @import '../../../styles/variables';
 
 .sidebar { position: fixed; top: 0; left: 0; width: 330px; height: 100vh; background-color: $background;
-  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 80px; z-index: 5;
-  transition: .5s;
+  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: calc($index * 3);
+  z-index: 5; transition: .5s;
 
   &__title { font-size: 1.87rem; font-family: 'Oswald'; letter-spacing: 1px; color: $accent; user-select: none; opacity: 0; }
-  &__nav { display: flex; flex-direction: column; gap: 40px; align-items: center; }
+  &__nav { display: flex; flex-direction: column; gap: calc($index * 1.5); align-items: center; }
   &__nav-item { font-size: 0.87rem; text-transform: uppercase; color: white; text-decoration: none;
     transition: .15s; opacity: 0;
 
     &:hover, &_active { color: $accent; }
   }
 
-  &__mobile-menu { opacity: 0; }
+  &__mobile-menu { opacity: 0; cursor: pointer; }
 
   @media (max-width: $tablet) { width: 85%; transform: translate(-100%);
     &_open { transform: translate(0); }

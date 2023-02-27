@@ -41,9 +41,9 @@ export default function Sidebar() {
   return (
     <div className={`${styles['sidebar']} ${isOpen && styles['sidebar_open']}`}>
       <div className={styles['sidebar__mobile-menu']} onClick={openMobileMenu}>
-        <Icon variant={isOpen ? 'close' : 'menu'}/>
+        <Icon variant={isOpen ? 'close' : 'menu'} color="red" />
       </div>
-      
+
       <div className={styles['sidebar__title']}>INCREDIBLE</div>
 
       <nav className={styles['sidebar__nav']}>
