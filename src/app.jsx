@@ -1,9 +1,10 @@
 import React from 'react';
+import Sidebar from '@/components/common/sidebar/sidebar';
 
 export default function App() {
   return (
     <main>
-      <h1>Incredible Template</h1>
+      <Sidebar />
     </main>
   );
 }
