@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.icon { display: block; width: 30px; height: 30px; mask-position: center; mask-repeat: no-repeat; mask-size: contain;
+
+  &__menu { mask-image: url(../../../assets/icons/menu.svg); }
+  &__close { mask-image: url(../../../assets/icons/close.svg); }
+
+  &_black { background-color: $text; }
+  &_red { background-color: $accent; }
+  &_white { background-color: white; }
+}

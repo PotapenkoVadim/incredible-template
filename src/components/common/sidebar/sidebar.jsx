@@ -1,8 +1,11 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import gsap from 'gsap';
 import styles from './sidebar.module.scss';
+import Icon from '@/components/ui-kit/icon/icon';
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   useLayoutEffect(() => {
     gsap.fromTo(
       `.${styles['sidebar__title']}`,
@@ -33,11 +36,15 @@ export default function Sidebar() {
     );
   }, []);
 
+  const openMobileMenu = () => setIsOpen(!isOpen);
+
   return (
-    <div className={styles['sidebar']}>
-      <div className={styles['sidebar__title']}>
-        INCREDIBLE
+    <div className={`${styles['sidebar']} ${isOpen && styles['sidebar_open']}`}>
+      <div className={styles['sidebar__mobile-menu']} onClick={openMobileMenu}>
+        <Icon variant={isOpen ? 'close' : 'menu'}/>
       </div>
+      
+      <div className={styles['sidebar__title']}>INCREDIBLE</div>
 
       <nav className={styles['sidebar__nav']}>
         <a

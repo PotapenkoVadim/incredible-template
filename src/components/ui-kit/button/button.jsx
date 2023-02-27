@@ -8,6 +8,7 @@ export default function Button({ variant = 'primary', ...props }) {
         ${styles['button']}
         ${styles[`button__${variant}`]}
       `}
-      {...props} />
+      {...props}
+    />
   );
 }

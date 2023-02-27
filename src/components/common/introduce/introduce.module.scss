@@ -8,4 +8,8 @@
   }
 
   &__actions { display: flex; align-items: center; justify-content: center; gap: 10px; opacity: 0; }
+
+  @media (max-width: $mobile) {
+    &__title { font-size: 2rem; letter-spacing: 1px; }
+  }
 }

@@ -2,4 +2,8 @@
 
 .app {
   &__container { margin-left: 330px; }
+
+  @media (max-width: $tablet) {
+    &__container { margin-left: 0; }
+  }
 }
