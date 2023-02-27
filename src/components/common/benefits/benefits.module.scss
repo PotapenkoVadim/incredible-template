@@ -10,7 +10,7 @@
     }
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $tablet) { padding: 0 $index;
     &__list { grid-template-columns: 1fr; }
     &__item {
       &-icon { margin: 0 auto; }

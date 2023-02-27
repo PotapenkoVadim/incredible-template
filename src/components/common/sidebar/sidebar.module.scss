@@ -14,9 +14,9 @@
 
   &__mobile-menu { opacity: 0; cursor: pointer; }
 
-  @media (max-width: $tablet) { width: 85%; transform: translate(-100%);
+  @media (max-width: $tablet) { width: 90%; transform: translate(-100%);
     &_open { transform: translate(0); }
 
-    &__mobile-menu { position: absolute; top: 5%; right: -15%; opacity: 1; }
+    &__mobile-menu { position: absolute; top: 5%; right: -10%; opacity: 1; }
   }
 }

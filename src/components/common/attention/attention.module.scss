@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.attention { padding: 45px calc($index * 5); background-color: $accent; color: white;
+  display: flex; align-items: center; justify-content: space-between;
+
+  &__title { margin: 0; }
+
+  @media (max-width: $mobile) { padding: 45px $index;
+    &__title { font-size: 1rem; }
+  }
+}
