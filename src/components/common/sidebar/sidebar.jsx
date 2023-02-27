@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import styles from './sidebar.module.scss';
 
 export default function Sidebar() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.fromTo(
       '[data-title]',
       {
