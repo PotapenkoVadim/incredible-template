@@ -4,6 +4,7 @@ import Sidebar from '@/components/common/sidebar/sidebar';
 import Introduce from '@/components/common/introduce/introduce';
 import Benefits from '@/components/common/benefits/benefits';
 import Attention from '@/components/common/attention/attention';
+import Works from '@/components/common/works/works';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Introduce />
         <Benefits />
         <Attention />
+        <Works />
       </div>
     </main>
   );

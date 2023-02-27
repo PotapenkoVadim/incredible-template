@@ -1,0 +1,7 @@
+@import '../../../styles/variables';
+
+.works { margin: 50px 0 75px; padding: 0 calc($index * 5);
+  &__sliders { display: flex; flex-direction: column; gap: 20px; }
+
+  @media (max-width: $tablet) { padding: 0 $index; }
+}
