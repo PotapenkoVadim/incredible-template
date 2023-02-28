@@ -10,7 +10,7 @@ export default function FormField({ placeholder }) {
   const handleChange = (event) => setValue(event.target.value);
 
   return (
-    <div className={styles['form__control']}>
+    <div data-mouseattract="dark" className={styles['form__control']}>
       <input
         onChange={handleChange}
         ref={fieldRef}

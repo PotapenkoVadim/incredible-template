@@ -48,18 +48,31 @@ export default function Sidebar() {
 
       <nav className={styles['sidebar__nav']}>
         <a
+          data-mouseattract="light"
           className={`${styles['sidebar__nav-item']} ${styles['sidebar__nav-item_active']}`}
           href="#"
         >
           Home
         </a>
-        <a className={styles['sidebar__nav-item']} href="#">
+        <a
+          data-mouseattract="light"
+          className={styles['sidebar__nav-item']}
+          href="#"
+        >
           About
         </a>
-        <a className={styles['sidebar__nav-item']} href="#">
+        <a
+          data-mouseattract="light"
+          className={styles['sidebar__nav-item']}
+          href="#"
+        >
           Gallery
         </a>
-        <a className={styles['sidebar__nav-item']} href="#">
+        <a
+          data-mouseattract="light"
+          className={styles['sidebar__nav-item']}
+          href="#"
+        >
           Contact
         </a>
       </nav>

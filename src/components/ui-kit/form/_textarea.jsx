@@ -10,7 +10,7 @@ export default function FormTextarea({ placeholder }) {
   const handleChange = (event) => setValue(event.target.value);
 
   return (
-    <div className={styles['form__control']}>
+    <div data-mouseattract="dark" className={styles['form__control']}>
       <textarea
         ref={textareaRef}
         value={value}
