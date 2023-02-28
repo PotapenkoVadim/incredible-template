@@ -18,6 +18,10 @@ export default function App() {
         <Attention />
         <Works />
         <Contact />
+
+        <footer className={styles['app__footer']}>
+          Copyright Incredible. Made in Webflow.
+        </footer>
       </div>
     </main>
   );

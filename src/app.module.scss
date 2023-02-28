@@ -2,6 +2,7 @@
 
 .app {
   &__container { margin-left: 330px; }
+  &__footer { padding: 25px 0; text-align: center; font-family: 'Oswald'; color: rgba(0, 0, 0, 0.74);}
 
   @media (max-width: $tablet) {
     &__container { margin-left: 0; }

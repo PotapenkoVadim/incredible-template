@@ -9,3 +9,18 @@
 body { font-family: 'PT Sans', sans-serif; font-size: $font; color: $text; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; }
+
+#cursor, #aura { position: absolute; border-radius: 100%; user-select: none; pointer-events: none; z-index: 999;
+  transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
+  will-change: transform;
+}
+
+#cursor { width: 8px; height: 8px; background-color: rgba(255, 255, 255, .5); transform: scale(1); }
+#aura { width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .2); background-color: rgba(255, 255, 255, .027);
+  transform: translate(5px, 5px);
+}
+
+#cursor.hidden, #aura.hidden { transform: scale(.001); }
+
+#cursor.active { opacity: 0; transform: scale(0); }
+#aura.active { border: 1.2px solid rgba(255, 255, 255, .33); transform: scale(1.3); }

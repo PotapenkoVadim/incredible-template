@@ -21,7 +21,9 @@ export default forwardRef(function Slider({ slides }, ref) {
             },
           }}
           spaceBetween={20}
-          mousewheel={true}
+          mousewheel={{
+            releaseOnEdges: true,
+          }}
           slidesPerView={1}
         >
           {slides.map((item) => (

@@ -6,6 +6,6 @@
   &__primary { border-color: $accent; background-color: $accent; }
   &__outline { border-color: white; background-color: transparent; }
 
-  &:hover { transform: scale(1.05); box-shadow: 0 0 15px rgba(0 0 0 / .5); }
-  &:active { transform: scale(0.95); box-shadow: none; }
+  &:hover { transform: scale(1.015); box-shadow: 0 0 15px rgba(0 0 0 / .5); }
+  &:active { transform: scale(0.99); box-shadow: none; }
 }
