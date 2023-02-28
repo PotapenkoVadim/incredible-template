@@ -8,6 +8,13 @@
   &__layout { mask-image: url(../../../assets/icons/layout.svg); }
   &__settings { mask-image: url(../../../assets/icons/settings.svg); }
   &__video { mask-image: url(../../../assets/icons/video.svg); }
+  &__ball { mask-image: url(../../../assets/icons/ball.svg); width: 17px; height: 17px; }
+  &__be { mask-image: url(../../../assets/icons/be.svg); width: 17px; height: 17px; }
+  &__facebook { mask-image: url(../../../assets/icons/facebook.svg); width: 17px; height: 17px; }
+  &__insta { mask-image: url(../../../assets/icons/insta.svg); width: 17px; height: 17px; }
+  &__mail { mask-image: url(../../../assets/icons/mail.svg); width: 17px; height: 17px; }
+  &__twitter { mask-image: url(../../../assets/icons/twitter.svg); width: 17px; height: 17px; }
+  &__w { mask-image: url(../../../assets/icons/w.svg); width: 17px; height: 17px; }
 
   &_black { background-color: $text; }
   &_red { background-color: $accent; }

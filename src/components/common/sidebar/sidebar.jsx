@@ -76,6 +76,16 @@ export default function Sidebar() {
           Contact
         </a>
       </nav>
+
+      <div className={styles['sidebar__networks']}>
+        <Icon variant='facebook' color='white' />
+        <Icon variant='twitter' color='white' />
+        <Icon variant='ball' color='white' />
+        <Icon variant='be' color='white' />
+        <Icon variant='w' color='white' />
+        <Icon variant='insta' color='white' />
+        <Icon variant='mail' color='white' />
+      </div>
     </div>
   );
 }

@@ -13,6 +13,7 @@
   }
 
   &__mobile-menu { opacity: 0; cursor: pointer; }
+  &__networks { color: white; padding-top: calc($index * 6); display: flex; align-items: center; gap: 7px; }
 
   @media (max-width: $tablet) { width: 90%; transform: translate(-100%);
     &_open { transform: translate(0); }
